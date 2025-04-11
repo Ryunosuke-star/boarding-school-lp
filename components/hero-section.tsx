@@ -21,8 +21,8 @@ export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* 背景オーバーレイを調整 */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
-      <Image
+{/* <div className="absolute inset-0 bg-black/40 z-10" /> */}
+<Image
         src="https://sjc.microlink.io/M-HOlDd7OGNja67j2P9Y2QUQCWuPb-l6GaN-nQmDycWV8eYkS3WTKlt0vqdXuYZ_WFWzc1vjU1n3p7G39nznhw.jpeg"
         alt="生徒たちがテディベアを投げて祝っている様子"
         fill
