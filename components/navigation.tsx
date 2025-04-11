@@ -1,3 +1,15 @@
+
+
+"use client"
+
+import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
+
+export function Navigation() {
+  return null
+}
+
+
 "use client"
 
 import { useState, useEffect } from "react"
