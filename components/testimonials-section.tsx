@@ -1,10 +1,11 @@
 "use client"
 
+
 export function TestimonialsSection() {
   return null
 }
 
-
+/*
 import { useInView } from "react-intersection-observer"
 import { Quote } from "lucide-react"
 import Image from "next/image"
@@ -18,6 +19,7 @@ export function TestimonialsSection() {
   return (
     <section className="py-24 bg-bsc-light relative">
       {/* 背景装飾を削除 */}
+      /*
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="section-title">お客様の声</h2>
@@ -89,4 +91,3 @@ export function TestimonialsSection() {
       </div>
     </section>
   )
-}
