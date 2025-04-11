@@ -5,7 +5,6 @@ import AboutSection from "@/components/about-section";
 import ProgramsSection from "@/components/programs-section";
 import SupportSection from "@/components/support-section";
 import TestimonialsSection from "@/components/testimonials-section";
-import EventsSection from "@/components/events-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 
@@ -27,8 +26,7 @@ export default function LandingPage() {
         <ProgramsSection />
         <SupportSection />
         <TestimonialsSection />
-        <EventsSection />
-        <ContactSection />
+                <ContactSection />
       </main>
 
       <Footer />
