@@ -18,8 +18,10 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000">
           {/* お問い合わせフォーム */}
-          <div
-            onClick={() => router.push("/contact-form")}
+          <a
+            href="https://boardingschool.jp/contact/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative overflow-hidden bg-white shadow-md rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer hover:shadow-lg transition-shadow min-h-[320px] border-t-4 border-black"
           >
             <div className="bg-black text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
@@ -29,7 +31,7 @@ export default function ContactSection() {
             <button className="inline-flex items-center bg-white border border-black rounded-full px-4 py-2 font-semibold hover:bg-black hover:text-white transition-colors">
               お問い合わせフォーム
             </button>
-          </div>
+          </a>
 
           {/* 電話でのお問い合わせ */}
           <a
