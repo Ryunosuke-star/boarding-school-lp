@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image"
 import { useInView } from "react-intersection-observer"
 
@@ -25,24 +26,25 @@ export function AboutSection() {
           <div className="md:w-1/2 relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-bsc-red"></div>
             <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="校舎の外観"
+              src="/images/代表者.png"
+              alt="代表の挨拶"
               width={800}
               height={600}
               className="rounded-lg shadow-custom object-cover"
             />
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-bsc-red"></div>
           </div>
+
           <div className="md:w-1/2">
             <h3 className="text-3xl font-bold mb-6 text-bsc-dark">ボーディングスクールコンサルティング</h3>
             <p className="text-bsc-gray mb-6 leading-relaxed">
               ボーディングスクールコンサルティング株式会社は、海外のボーディングスクール（寮制学校）への留学を専門とするコンサルティング会社です。
             </p>
             <p className="text-bsc-gray mb-6 leading-relaxed">
-              私たちは、生徒一人ひとりの個性や目標に合わせた最適な学校選びから、出願手続き、入学後のサポートまで、留学の全プロセスをサポートします。
+              私たちは、生徒一人ひとりの個性と目標に合わせた最適な学校選びから、出願手続き、入学後のサポートまで、留学の全プロセスをサポートします。
             </p>
             <p className="text-bsc-gray mb-8 leading-relaxed">
-              長年の経験と専門知識を活かし、生徒たちの「未来」のために最高の教育機会を提供することを使命としています。
+              世界中の名門校とのネットワークを活かし、生徒たちが「未来」のために最適の教育機会を提供することを使命としています。
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="btn-primary">
