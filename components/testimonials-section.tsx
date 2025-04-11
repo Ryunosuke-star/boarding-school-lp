@@ -1,5 +1,10 @@
 "use client"
 
+export function TestimonialsSection() {
+  return null
+}
+
+
 import { useInView } from "react-intersection-observer"
 import { Quote } from "lucide-react"
 import Image from "next/image"
