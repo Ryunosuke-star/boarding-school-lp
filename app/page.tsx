@@ -1,25 +1,25 @@
-import { HeroSection } from "@/components/hero-section"
-import { Logo } from "@/components/logo"
-import { Navigation } from "@/components/navigation"
-import { AboutSection } from "@/components/about-section"
-import { ProgramsSection } from "@/components/programs-section"
-import { SupportSection } from "@/components/support-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
-import { EventsSection } from "@/components/events-section"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import HeroSection from "@/components/hero-section";
+import Logo from "@/components/logo";
+import Navigation from "@/components/navigation";
+import AboutSection from "@/components/about-section";
+import ProgramsSection from "@/components/programs-section";
+import SupportSection from "@/components/support-section";
+import TestimonialsSection from "@/components/testimonials-section";
+import EventsSection from "@/components/events-section";
+import ContactSection from "@/components/contact-section";
+import Footer from "@/components/footer";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
         <div className="flex">
           <div className="bg-white p-4">
             <Logo />
           </div>
           <Navigation />
         </div>
-      </header>
+      </header> */}
 
       <main>
         <HeroSection />
@@ -33,5 +33,5 @@ export default function LandingPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
