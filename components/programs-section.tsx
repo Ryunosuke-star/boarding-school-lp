@@ -56,7 +56,9 @@ export function ProgramsSection() {
                 </ul>
                 <div className="mt-4">
                   <a
-                    href="#"
+                    href="https://boardingschool.jp/about/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
                   >
                     詳細を見る
@@ -93,7 +95,9 @@ export function ProgramsSection() {
                 </ul>
                 <div className="mt-4">
                   <a
-                    href="#"
+                    href="https://boardingschool.jp/summer-school-program/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
                   >
                     詳細を見る
