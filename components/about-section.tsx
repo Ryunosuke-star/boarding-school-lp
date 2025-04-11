@@ -37,7 +37,7 @@ export function AboutSection() {
 
           <div className="md:w-1/2 space-y-8">
             <div>
-              <h3 className="text-3xl font-bold mb-4 text-bsc-dark">ボーディングスクールコンサルティング</h3>
+              <h3 className="text-3xl font-bold mb-4 text-bsc-dark">ボーディングスクールコンサルティング株式会社（BSC）</h3>
               <p className="text-bsc-gray mb-4 leading-relaxed">
                 ボーディングスクールコンサルティング株式会社は、海外のボーディングスクール（寮制学校）への留学を専門とするコンサルティング会社です。
               </p>
@@ -50,8 +50,8 @@ export function AboutSection() {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">代表あいさつ</h4>
-              <p className="text-bsc-gray mb-4 leading-relaxed">
+            <h3 className="text-3xl font-bold mb-4 text-bsc-dark">代表あいさつ</h3>
+                          <p className="text-bsc-gray mb-4 leading-relaxed">
                 1992年の夏にアメリカのバーモント州にあるボーディングスクールが開催するサマースクールに参加するために成田空港から出発した日のことは、今でもはっきりと覚えています。
               </p>
               <p className="text-bsc-gray mb-4 leading-relaxed">
