@@ -12,11 +12,11 @@ export default function ContactSection() {
         <h2 className="text-4xl font-bold mb-2">Contact</h2>
         <p className="text-gray-600 mb-12">お問い合わせ</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* お問い合わせフォーム */}
           <div
             onClick={() => router.push("/contact-form")}
-            className="border rounded-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow"
+            className="border rounded-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow h-64"
           >
             <div className="bg-black text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Mail size={24} />
@@ -29,7 +29,7 @@ export default function ContactSection() {
           {/* 電話でのお問い合わせ */}
           <a
             href="tel:0365551642"
-            className="border rounded-lg p-6 flex flex-col items-center hover:shadow-lg transition-shadow"
+            className="border rounded-lg p-6 flex flex-col items-center hover:shadow-lg transition-shadow h-64"
           >
             <div className="bg-black text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Phone size={24} />
