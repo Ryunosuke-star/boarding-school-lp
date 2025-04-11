@@ -3,7 +3,7 @@ import { AboutSection } from "@/components/about-section"
 import { ProgramsSection } from "@/components/programs-section"
 import { SupportSection } from "@/components/support-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { ContactSection } from "@/components/contact-section"
+import ContactSection from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
 export default function LandingPage() {
