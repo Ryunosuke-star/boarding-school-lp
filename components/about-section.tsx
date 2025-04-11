@@ -71,9 +71,6 @@ export function AboutSection() {
               <a href="#contact" className="btn-primary">
                 お問い合わせ
               </a>
-              <a href="#programs" className="btn-secondary">
-                プログラムを見る
-              </a>
             </div>
           </div>
         </div>
