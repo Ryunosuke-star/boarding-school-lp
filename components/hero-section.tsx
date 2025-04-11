@@ -20,10 +20,8 @@ export function HeroSection() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* 背景オーバーレイを調整 */}
-{/* <div className="absolute inset-0 bg-black/40 z-10" /> */}
-<Image
-        src="https://sjc.microlink.io/M-HOlDd7OGNja67j2P9Y2QUQCWuPb-l6GaN-nQmDycWV8eYkS3WTKlt0vqdXuYZ_WFWzc1vjU1n3p7G39nznhw.jpeg"
+      <Image
+        src="https://sjc.microlink.io/M-Ho1Dd07G36jrZ9Y2OUQChwPb-l6GaN-oNmDycVw8eYks3MTK1tevqdxUzY_WFhzCivjUin3p7G39n2nhw.jpeg"
         alt="生徒たちがテディベアを投げて祝っている様子"
         fill
         className="object-cover"
@@ -34,8 +32,12 @@ export function HeroSection() {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         }`}
       >
-        <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">For the</h1>
-        <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">Future</h1>
+        <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+          For the
+        </h1>
+        <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+          Future
+        </h1>
       </div>
       <button
         onClick={scrollToAbout}
