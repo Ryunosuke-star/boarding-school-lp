@@ -21,12 +21,12 @@ export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Image
-        src="https://sjc.microlink.io/M-Ho1Dd07G36jrZ9Y2OUQChwPb-l6GaN-oNmDycVw8eYks3MTK1tevqdxUzY_WFhzCivjUin3p7G39n2nhw.jpeg"
-        alt="生徒たちがテディベアを投げて祝っている様子"
-        fill
-        className="object-cover"
-        priority
-      />
+  src="/images/hero.jpg"
+  alt="新しいヒーローイメージの説明"
+  fill
+  className="object-cover"
+  priority
+/>
       <div
         className={`absolute bottom-0 left-0 p-10 z-20 transition-all duration-1000 transform ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
