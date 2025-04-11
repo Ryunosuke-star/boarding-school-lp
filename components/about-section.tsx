@@ -35,17 +35,37 @@ export function AboutSection() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-bsc-red" />
           </div>
 
-          <div className="md:w-1/2">
-            <h3 className="text-3xl font-bold mb-6 text-bsc-dark">ボーディングスクールコンサルティング</h3>
-            <p className="text-bsc-gray mb-6 leading-relaxed">
-              ボーディングスクールコンサルティング株式会社は、海外のボーディングスクール（寮制学校）への留学を専門とするコンサルティング会社です。
-            </p>
-            <p className="text-bsc-gray mb-6 leading-relaxed">
-              私たちは、生徒一人ひとりの個性と目標に合わせた最適な学校選びから、出願手続き、入学後のサポートまで、留学の全プロセスをサポートします。
-            </p>
-            <p className="text-bsc-gray mb-6 leading-relaxed">
-              世界中の名門校とのネットワークを活かし、生徒たちが「未来」のために最適の教育機会を提供することを使命としています。
-            </p>
+          <div className="md:w-1/2 space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold mb-4 text-bsc-dark">ボーディングスクールコンサルティング</h3>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                ボーディングスクールコンサルティング株式会社は、海外のボーディングスクール（寮制学校）への留学を専門とするコンサルティング会社です。
+              </p>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                私たちは、生徒一人ひとりの個性と目標に合わせた最適な学校選びから、出願手続き、入学後のサポートまで、留学の全プロセスをサポートします。
+              </p>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                世界中の名門校とのネットワークを活かし、生徒たちが「未来」のために最適の教育機会を提供することを使命としています。
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold mb-4">代表あいさつ</h4>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                1992年の夏にアメリカのバーモント州にあるボーディングスクールが開催するサマースクールに参加するために成田空港から出発した日のことは、今でもはっきりと覚えています。
+              </p>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                偏差値の高い大学に入学することが中高6年間の学校生活のゴールと言われたことに感じた違和感、どれだけ勉強しても成績が伸びない英語へのコンプレックス、早く家から出て自立したいと望る気持ち。
+              </p>
+              <p className="text-bsc-gray mb-4 leading-relaxed">
+                その後、本屋で出会った西部邁の著作に導かれるようにしてアメリカの高校への挑戦と、留学という道筋。「自分の進むべき道は、これだ！」と信じた気持ちから始まった個性に応じた進路。そして今、ボーディングスクール留学専門コンサルティング会社として、目標・志を持った中学生・高校生・小中高生のボーディングスクールへの留学を全力でサポートしています。
+              </p>
+              <div className="mt-6">
+                <p className="text-sm">ボーディングスクールコンサルティング株式会社</p>
+                <p className="text-sm">代表取締役社長</p>
+                <p className="text-xl font-signature">横山 英治</p>
+              </div>
+            </div>
 
             <div className="flex flex-wrap gap-4 mt-6">
               <a href="#contact" className="btn-primary">
@@ -55,26 +75,6 @@ export function AboutSection() {
                 プログラムを見る
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* 代表あいさつセクション */}
-        <div className="mt-20 max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-6">代表あいさつ</h2>
-          <p className="text-left leading-relaxed mb-4">
-            1992年の夏にアメリカのバーモント州にあるボーディングスクールが開催するサマースクールに参加するために成田空港から出発した日のことは、今でもはっきりと覚えています。
-          </p>
-          <p className="text-left leading-relaxed mb-4">
-            偏差値の高い大学に入学することが中高6年間の学校生活のゴールと言われたことに感じた違和感、どれだけ勉強しても成績が伸びない英語へのコンプレックス、早く家から出て自立したいと望る気持ち。
-          </p>
-          <p className="text-left leading-relaxed mb-4">
-            その後、本屋で出会った西部邁の著作に導かれるようにしてアメリカの高校への挑戦と、留学という道筋。「自分の進むべき道は、これだ！」と信じた気持ちから始まった個性に応じた進路。そして今、ボーディングスクール留学専門コンサルティング会社として、目標・志を持った中学生・高校生・小中高生のボーディングスクールへの留学を全力でサポートしています。
-          </p>
-
-          <div className="mt-8 text-right">
-            <p className="text-sm">ボーディングスクールコンサルティング株式会社</p>
-            <p className="text-sm">代表取締役社長</p>
-            <p className="text-xl font-signature">横山 英治</p>
           </div>
         </div>
       </div>
