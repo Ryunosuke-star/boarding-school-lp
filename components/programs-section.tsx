@@ -42,9 +42,7 @@ export function ProgramsSection() {
                 alt="ボーディングスクール留学について"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute top-4 left-4 bg-red-500 text-white rounded-full p-2">
-                <GraduationCap size={20} />
-              </div>
+              
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
                 <p className="text-gray-700 mb-4">
@@ -81,9 +79,7 @@ export function ProgramsSection() {
                 alt="サマースクールプログラムについて"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute top-4 left-4 bg-yellow-500 text-white rounded-full p-2">
-                <Sun size={20} />
-              </div>
+              
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-bsc-red">サマースクールプログラム</h3>
                 <p className="text-gray-700 mb-4">
