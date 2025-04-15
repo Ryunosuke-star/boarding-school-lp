@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 
-export default function SupportSection() {
+export function SupportSection() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -29,7 +28,7 @@ export default function SupportSection() {
           transition={{ duration: 1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
         >
-          {/* Boarding School Support */}
+          {/* ボーディングスクール留学サポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
@@ -37,17 +36,17 @@ export default function SupportSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <div className="relative h-64">
-                <Image
-                  src="/images/support-boarding-bg.png"
-                  alt="ボーディングスクールサポート"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="absolute inset-0 bg-red-700 opacity-70" />
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                  <h3 className="text-sm font-bold">ボーディングスクール留学のサポート内容</h3>
-                  <p className="text-xs">（1年以上の長期留学）</p>
+              <div
+                className="relative h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
+                style={{
+                  backgroundImage: "url('/images/boarding-support.png')",
+                }}
+              >
+                <div>
+                  <h3 className="text-white font-bold text-sm md:text-base">
+                    ボーディングスクール留学のサポート内容
+                  </h3>
+                  <p className="text-white text-xs">(1年以上の長期留学)</p>
                 </div>
               </div>
               <div className="p-6">
@@ -77,7 +76,7 @@ export default function SupportSection() {
             </div>
           </motion.div>
 
-          {/* Summer School Support */}
+          {/* サマースクールプログラムサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
@@ -85,17 +84,17 @@ export default function SupportSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <div className="relative h-64">
-                <Image
-                  src="/images/support-summer-bg.png"
-                  alt="サマースクールサポート"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="absolute inset-0 bg-sky-800 opacity-70" />
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                  <h3 className="text-sm font-bold">サマースクールプログラムのサポート内容</h3>
-                  <p className="text-xs">（2〜5週間の短期留学）</p>
+              <div
+                className="relative h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
+                style={{
+                  backgroundImage: "url('/images/summer-support.png')",
+                }}
+              >
+                <div>
+                  <h3 className="text-white font-bold text-sm md:text-base">
+                    サマースクールプログラムのサポート内容
+                  </h3>
+                  <p className="text-white text-xs">(2〜5週間の短期留学)</p>
                 </div>
               </div>
               <div className="p-6">
