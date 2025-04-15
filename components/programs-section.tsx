@@ -49,7 +49,7 @@ export default function ProgramsSection() {
               </a>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
+                <h3 className="text-4xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
                 <p className="text-gray-700 text-lg mb-4">
                   世界トップクラスのボーディングスクールへの留学をサポートします。アメリカ、イギリス、カナダ、スイスなど、各国の一流校への入学をお手伝いします。
                 </p>
@@ -59,7 +59,7 @@ export default function ProgramsSection() {
                   <li>➤ ビザ取得サポート</li>
                   <li>➤ 出発前オリエンテーション</li>
                 </ul>
-                <div className="mt-6">
+                <div className="mt-8">
                   <a
                     href="https://boardingschool.jp/about/"
                     target="_blank"
@@ -94,7 +94,7 @@ export default function ProgramsSection() {
               </a>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#3F8CA9]">サマースクールプログラム</h3>
+                <h3 className="text-4xl font-bold mb-4 text-[#3F8CA9]">サマースクールプログラム</h3>
                 <p className="text-gray-700 text-lg mb-4">
                   夏休み期間を利用した短期留学プログラムです。語学力の向上はもちろん、現地の文化体験や国際交流を通じて、グローバルな視野を広げることができます。
                 </p>
@@ -104,7 +104,7 @@ export default function ProgramsSection() {
                   <li>➤ アカデミックコース</li>
                   <li>➤ スポーツ・芸術活動</li>
                 </ul>
-                <div className="mt-6">
+                <div className="mt-8">
                   <a
                     href="https://boardingschool.jp/summer-school-program/"
                     target="_blank"
