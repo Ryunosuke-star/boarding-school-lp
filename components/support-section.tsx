@@ -20,7 +20,9 @@ const SupportSection = () => {
             <div
               className="relative h-[250px] md:h-[300px] bg-cover bg-center"
               style={{ backgroundImage: "url('/images/boarding-support.png')" }}
-            />
+            >
+              <div className="absolute inset-0 bg-red-700 opacity-70" />
+            </div>
             <div className="bg-black text-white text-sm text-center py-3">
               <div className="font-bold">ボーディングスクール留学のサポート内容</div>
               <div>（１年以上の長期留学）</div>
@@ -49,7 +51,9 @@ const SupportSection = () => {
             <div
               className="relative h-[250px] md:h-[300px] bg-cover bg-center"
               style={{ backgroundImage: "url('/images/summer-support.png')" }}
-            />
+            >
+              <div className="absolute inset-0 bg-sky-700 opacity-70" />
+            </div>
             <div className="bg-black text-white text-sm text-center py-3">
               <div className="font-bold">サマースクールプログラムのサポート内容</div>
               <div>（２〜５週間の短期留学）</div>
