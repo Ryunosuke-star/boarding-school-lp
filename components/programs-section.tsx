@@ -94,3 +94,4 @@ export default function ProgramsSection() {
     </section>
   )
 }
+export default ProgramsSection
