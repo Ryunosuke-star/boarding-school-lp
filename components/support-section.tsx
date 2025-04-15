@@ -28,28 +28,26 @@ export function SupportSection() {
           transition={{ duration: 1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
         >
-          {/* ボーディングスクール留学サポート */}
+          {/* ボーディングスクールサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.1 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+            <div className="relative overflow-hidden shadow-md rounded-lg">
               <div
-                className="relative h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
+                className="h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
                 style={{
                   backgroundImage: "url('/images/boarding-support.png')",
                 }}
               >
                 <div>
-                  <h3 className="text-white font-bold text-sm md:text-base">
-                    ボーディングスクール留学のサポート内容
-                  </h3>
-                  <p className="text-white text-xs">(1年以上の長期留学)</p>
+                  <h3 className="text-lg font-bold mb-2">ボーディングスクール留学のサポート内容</h3>
+                  <p className="text-sm">(1年以上の長期留学)</p>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="bg-white p-6">
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li>✓ 個別カウンセリング</li>
                   <li>✓ 学校選定アドバイス</li>
@@ -76,28 +74,26 @@ export function SupportSection() {
             </div>
           </motion.div>
 
-          {/* サマースクールプログラムサポート */}
+          {/* サマースクールサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.3 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+            <div className="relative overflow-hidden shadow-md rounded-lg">
               <div
-                className="relative h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
+                className="h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
                 style={{
                   backgroundImage: "url('/images/summer-support.png')",
                 }}
               >
                 <div>
-                  <h3 className="text-white font-bold text-sm md:text-base">
-                    サマースクールプログラムのサポート内容
-                  </h3>
-                  <p className="text-white text-xs">(2〜5週間の短期留学)</p>
+                  <h3 className="text-lg font-bold mb-2">サマースクールプログラムのサポート内容</h3>
+                  <p className="text-sm">(2〜5週間の短期留学)</p>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="bg-white p-6">
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li>✓ プログラム選定アドバイス</li>
                   <li>✓ 応募書類の準備と提出サポート</li>
@@ -126,3 +122,5 @@ export function SupportSection() {
     </section>
   )
 }
+
+export default SupportSection
