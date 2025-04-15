@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { GraduationCap, Sun } from "lucide-react"
 
 export function ProgramsSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -18,7 +17,7 @@ export function ProgramsSection() {
           <h2 className="text-4xl font-bold text-center mb-6 underline underline-offset-4 decoration-red-500">
             Our Programs
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-lg">
             ボーディングスクールコンサルティングでは、生徒の皆さんに最適な留学プログラムをご提案しています。
           </p>
         </div>
@@ -37,18 +36,24 @@ export function ProgramsSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <img
-                src="/images/boarding-school.png"
-                alt="ボーディングスクール留学について"
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              
+              <a
+                href="https://boardingschool.jp/about/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/boarding-school.png"
+                  alt="ボーディングスクール留学について"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </a>
+
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 text-lg mb-4">
                   世界トップクラスのボーディングスクールへの留学をサポートします。アメリカ、イギリス、カナダ、スイスなど、各国の一流校への入学をお手伝いします。
                 </p>
-                <ul className="text-sm text-gray-700 space-y-2">
+                <ul className="text-base text-gray-700 space-y-2">
                   <li>➤ 学校選定から出願まで一貫したサポート</li>
                   <li>➤ 入学試験・面接対策</li>
                   <li>➤ ビザ取得サポート</li>
@@ -59,7 +64,7 @@ export function ProgramsSection() {
                     href="https://boardingschool.jp/about/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
+                    className="btn-primary"
                   >
                     詳細を見る
                   </a>
@@ -76,18 +81,24 @@ export function ProgramsSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <img
-                src="/images/summer-program.png"
-                alt="サマースクールプログラムについて"
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              
+              <a
+                href="https://boardingschool.jp/summer-school-program/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/summer-program.png"
+                  alt="サマースクールプログラムについて"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </a>
+
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-bsc-red">サマースクールプログラム</h3>
-                <p className="text-gray-700 mb-4">
+                <h3 className="text-xl font-bold mb-4 text-blue-600">サマースクールプログラム</h3>
+                <p className="text-gray-700 text-lg mb-4">
                   夏休み期間を利用した短期留学プログラムです。語学力の向上はもちろん、現地の文化体験や国際交流を通じて、グローバルな視野を広げることができます。
                 </p>
-                <ul className="text-sm text-gray-700 space-y-2">
+                <ul className="text-base text-gray-700 space-y-2">
                   <li>➤ 2週間〜8週間の短期プログラム</li>
                   <li>➤ 英語集中コース</li>
                   <li>➤ アカデミックコース</li>
@@ -98,7 +109,7 @@ export function ProgramsSection() {
                     href="https://boardingschool.jp/summer-school-program/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
+                    className="btn-primary"
                   >
                     詳細を見る
                   </a>
