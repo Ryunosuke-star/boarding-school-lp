@@ -39,7 +39,7 @@ export default function SupportSection() {
               <img
                 src="/images/boarding-support.png"
                 alt="ボーディングスクールサポート"
-                className="w-full object-cover object-center scale-95"
+                className="w-full object-cover object-center scale-100"
               />
               >
               <ul className="text-sm text-gray-700 space-y-2 p-6">
@@ -78,7 +78,7 @@ export default function SupportSection() {
               <img
                 src="/images/summer-support.png"
                 alt="サマースクールサポート"
-                className="w-full object-cover object-center scale-95"
+                className="w-full object-cover object-center scale-100"
               />
               
               <ul className="text-sm text-gray-700 space-y-2 p-6">
