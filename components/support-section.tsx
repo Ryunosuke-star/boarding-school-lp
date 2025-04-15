@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { FileText, Sun } from "lucide-react"
 
 export function SupportSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,32 +28,28 @@ export function SupportSection() {
           transition={{ duration: 1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
         >
-          {/* ボーディングスクール留学サポート */}
+          {/* ボーディングスクールサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.1 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg border-t-4 border-bsc-red">
+            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+              <img
+                src="/images/boarding-support.png"
+                alt="ボーディングスクール留学サポート"
+                className="object-cover w-full transition-transform duration-500 group-hover:scale-110"
+              />
               <div className="p-6">
-                <div className="bg-bsc-red text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
-                  <FileText size={28} />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-bsc-red">
-                  ボーディングスクール留学サポート
-                </h3>
+                <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学サポート</h3>
                 <ul className="text-sm text-gray-700 space-y-2">
-                  <li>✔ 個別カウンセリング</li>
-                  <li>✔ 学校選定アドバイス</li>
-                  <li>✔ 出願戦略の立案</li>
-                  <li>✔ スケジュール管理</li>
-                  <li>✔ 必要書類の準備</li>
-                  <li>✔ 出願書類の添削</li>
-                  <li>✔ 願書提出サポート</li>
-                  <li>✔ 面接練習</li>
-                  <li>✔ 保護者への報告</li>
-                  <li>✔ 合格後の手続き支援</li>
+                  <li>✓ 個別カウンセリング</li>
+                  <li>✓ 学校選定アドバイス</li>
+                  <li>✓ 出願戦略の立案</li>
+                  <li>✓ 書類準備・添削</li>
+                  <li>✓ 面接対策</li>
+                  <li>✓ 保護者への報告</li>
                 </ul>
                 <div className="mt-4">
                   <a
@@ -70,30 +65,26 @@ export function SupportSection() {
             </div>
           </motion.div>
 
-          {/* サマースクールプログラムサポート */}
+          {/* サマースクールサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.3 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg border-t-4 border-bsc-gold">
+            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+              <img
+                src="/images/summer-support.png"
+                alt="サマースクールプログラムサポート"
+                className="object-cover w-full transition-transform duration-500 group-hover:scale-110"
+              />
               <div className="p-6">
-                <div className="bg-bsc-gold text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
-                  <Sun size={28} />
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-bsc-gold">
-                  サマースクールプログラムサポート
-                </h3>
+                <h3 className="text-xl font-bold mb-4 text-bsc-blue">サマースクールプログラムサポート</h3>
                 <ul className="text-sm text-gray-700 space-y-2">
-                  <li>✔ プログラムの選定アドバイス</li>
-                  <li>✔ 応募書類の準備と提出サポート</li>
-                  <li>✔ 英語力確認・事前課題サポート</li>
-                  <li>✔ 現地スタッフとの連携</li>
-                  <li>✔ 出発前の生活オリエンテーション</li>
-                  <li>✔ 渡航前後のサポート</li>
-                  <li>✔ 緊急時対応</li>
-                  <li>✔ 保護者への報告</li>
+                  <li>✓ プログラム選定アドバイス</li>
+                  <li>✓ 応募書類の準備と提出</li>
+                  <li>✓ 英語力確認・事前課題支援</li>
+                  <li>✓ 緊急時対応・保護者報告</li>
                 </ul>
                 <div className="mt-4">
                   <a
