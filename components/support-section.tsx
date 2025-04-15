@@ -35,36 +35,36 @@ const SupportSection = () => {
           className="flex-1 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
         >
           <Link href="/bscs-support">
-            <div className="relative h-60 w-full cursor-pointer">
+            <div className="relative h-60 w-full cursor-pointer group">
               <Image
                 src="/images/boarding-support.png"
                 alt="Boarding School Support"
                 layout="fill"
                 objectFit="cover"
+                className="transition-transform duration-500 group-hover:scale-110"
               />
             </div>
           </Link>
-          <div className="bg-black text-white text-center py-3 font-bold text-xl">
-            ボーディングスクール留学のサポート内容
-            <br />
-            （1年以上の長期留学）
-          </div>
+
           <div className="p-6 flex-grow flex flex-col justify-between">
+            <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>
+              ボーディングスクール留学のサポート内容
+            </h3>
             <ul className="text-sm text-gray-700 mb-6 list-inside list-disc">
-              <li>✓ 個別カウンセリング</li>
-              <li>✓ 学校選定アドバイス</li>
-              <li>✓ 出願戦略の立案</li>
-              <li>✓ スケジュール管理</li>
-              <li>✓ 必要書類の準備</li>
-              <li>✓ 出願書類の添削</li>
-              <li>✓ 願書提出サポート</li>
-              <li>✓ 面接練習</li>
-              <li>✓ 保護者への報告</li>
-              <li>✓ 合格後の手続き支援</li>
+              <li> 個別カウンセリング</li>
+              <li> 学校選定アドバイス</li>
+              <li> 出願戦略の立案</li>
+              <li> スケジュール管理</li>
+              <li> 必要書類の準備</li>
+              <li> 出願書類の添削</li>
+              <li> 願書提出サポート</li>
+              <li> 面接練習</li>
+              <li> 保護者への報告</li>
+              <li> 合格後の手続き支援</li>
             </ul>
-            <div className="mt-4">
+            <div className="mt-8">
               <Link href="/bscs-support">
-                <div className="inline-block bg-yellow-100 text-yellow-900 py-2 px-4 rounded shadow hover:bg-yellow-200 transition">
+                <div className="bg-bsc-gold text-white py-2 px-4 rounded hover:bg-yellow-600 transition text-sm font-bold inline-flex items-center">
                   詳細を見る
                 </div>
               </Link>
@@ -78,34 +78,34 @@ const SupportSection = () => {
           className="flex-1 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
         >
           <Link href="/bscs-support">
-            <div className="relative h-60 w-full cursor-pointer">
+            <div className="relative h-60 w-full cursor-pointer group">
               <Image
                 src="/images/summer-support.png"
                 alt="Summer School Program Support"
                 layout="fill"
                 objectFit="cover"
+                className="transition-transform duration-500 group-hover:scale-110"
               />
             </div>
           </Link>
-          <div className="bg-black text-white text-center py-3 font-bold text-xl">
-            サマースクールプログラムのサポート内容
-            <br />
-            （2〜5週間の短期留学）
-          </div>
+
           <div className="p-6 flex-grow flex flex-col justify-between">
+            <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>
+              サマースクールプログラムのサポート内容
+            </h3>
             <ul className="text-sm text-gray-700 mb-6 list-inside list-disc">
-              <li>✓ プログラム選定アドバイス</li>
-              <li>✓ 応募書類の準備と提出サポート</li>
-              <li>✓ 英語力確認・事前課題サポート</li>
-              <li>✓ 現地スタッフとの連携</li>
-              <li>✓ 出発前の生活オリエンテーション</li>
-              <li>✓ 渡航前後のサポート</li>
-              <li>✓ 緊急時対応</li>
-              <li>✓ 保護者への報告</li>
+              <li> プログラム選定アドバイス</li>
+              <li> 応募書類の準備と提出サポート</li>
+              <li> 英語力確認・事前課題サポート</li>
+              <li> 現地スタッフとの連携</li>
+              <li> 出発前の生活オリエンテーション</li>
+              <li> 渡航前後のサポート</li>
+              <li> 緊急時対応</li>
+              <li> 保護者への報告</li>
             </ul>
-            <div className="mt-4">
+            <div className="mt-8">
               <Link href="/bscs-support">
-                <div className="inline-block bg-yellow-100 text-yellow-900 py-2 px-4 rounded shadow hover:bg-yellow-200 transition">
+                <div className="bg-bsc-gold text-white py-2 px-4 rounded hover:bg-yellow-600 transition text-sm font-bold inline-flex items-center">
                   詳細を見る
                 </div>
               </Link>
