@@ -28,28 +28,24 @@ export default function SupportSection() {
           transition={{ duration: 1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
         >
-          {/* Boarding School Support */}
+          {/* ボーディングスクールサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="card group shadow-md rounded-md overflow-hidden bg-white"
+            className="rounded shadow-md overflow-hidden"
           >
             <div
               className="h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
-              style={{
-                backgroundImage: `url('/images/boarding-support.png')`,
-              }}
+              style={{ backgroundImage: "url('/images/boarding-support.png')" }}
             >
               <div>
-                <h3 className="text-sm md:text-base font-semibold">
-                  ボーディングスクール留学のサポート内容
-                </h3>
-                <p className="text-xs md:text-sm mt-1">（1年以上の長期留学）</p>
+                <h3 className="text-lg font-bold">ボーディングスクール留学のサポート内容</h3>
+                <p className="text-sm">(1年以上の長期留学)</p>
               </div>
             </div>
-            <div className="p-6">
-              <ul className="text-sm text-gray-700 space-y-2">
+            <div className="bg-white p-6 text-sm text-gray-800">
+              <ul className="space-y-2">
                 <li>✓ 個別カウンセリング</li>
                 <li>✓ 学校選定アドバイス</li>
                 <li>✓ 出願戦略の立案</li>
@@ -66,7 +62,7 @@ export default function SupportSection() {
                   href="https://boardingschool.jp/support-boarding-school/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
+                  className="text-bsc-gold font-bold hover:text-amber-600"
                 >
                   詳細を見る
                 </a>
@@ -74,28 +70,24 @@ export default function SupportSection() {
             </div>
           </motion.div>
 
-          {/* Summer School Support */}
+          {/* サマースクールプログラムサポート */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
-            transition={{ delay: 0.3 }}
-            className="card group shadow-md rounded-md overflow-hidden bg-white"
+            transition={{ delay: 0.2 }}
+            className="rounded shadow-md overflow-hidden"
           >
             <div
               className="h-64 bg-cover bg-center flex items-center justify-center text-white text-center px-4"
-              style={{
-                backgroundImage: `url('/images/summer-support.png')`,
-              }}
+              style={{ backgroundImage: "url('/images/summer-support.png')" }}
             >
               <div>
-                <h3 className="text-sm md:text-base font-semibold">
-                  サマースクールプログラムのサポート内容
-                </h3>
-                <p className="text-xs md:text-sm mt-1">（2〜5週間の短期留学）</p>
+                <h3 className="text-lg font-bold">サマースクールプログラムのサポート内容</h3>
+                <p className="text-sm">(2〜5週間の短期留学)</p>
               </div>
             </div>
-            <div className="p-6">
-              <ul className="text-sm text-gray-700 space-y-2">
+            <div className="bg-white p-6 text-sm text-gray-800">
+              <ul className="space-y-2">
                 <li>✓ プログラム選定アドバイス</li>
                 <li>✓ 応募書類の準備と提出サポート</li>
                 <li>✓ 英語力確認・事前課題サポート</li>
@@ -110,7 +102,7 @@ export default function SupportSection() {
                   href="https://boardingschool.jp/support-summer-school/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
+                  className="text-bsc-gold font-bold hover:text-amber-600"
                 >
                   詳細を見る
                 </a>
