@@ -36,11 +36,7 @@ export default function ProgramsSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <a
-                href="https://boardingschool.jp/about/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://boardingschool.jp/about/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="/images/boarding-school.png"
                   alt="ボーディングスクール留学について"
@@ -49,23 +45,18 @@ export default function ProgramsSection() {
               </a>
 
               <div className="p-6">
-                <h3 className="text-4xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
+                <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
                 <p className="text-gray-700 text-lg mb-4">
                   世界トップクラスのボーディングスクールへの留学をサポートします。アメリカ、イギリス、カナダ、スイスなど、各国の一流校への入学をお手伝いします。
                 </p>
-                <ul className="text-base text-gray-700 space-y-2">
+                <ul className="text-gray-700 text-sm space-y-2 mb-6">
                   <li>➤ 学校選定から出願まで一貫したサポート</li>
                   <li>➤ 入学試験・面接対策</li>
                   <li>➤ ビザ取得サポート</li>
                   <li>➤ 出発前オリエンテーション</li>
                 </ul>
-                <div className="mt-8">
-                  <a
-                    href="https://boardingschool.jp/about/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
+                <div className="mt-6">
+                  <a href="https://boardingschool.jp/about/" className="bg-bsc-gold text-white py-2 px-4 rounded hover:bg-yellow-600 transition">
                     詳細を見る
                   </a>
                 </div>
@@ -81,11 +72,7 @@ export default function ProgramsSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <a
-                href="https://boardingschool.jp/summer-school-program/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://boardingschool.jp/summer-school/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="/images/summer-program.png"
                   alt="サマースクールプログラムについて"
@@ -94,23 +81,18 @@ export default function ProgramsSection() {
               </a>
 
               <div className="p-6">
-                <h3 className="text-4xl font-bold mb-4 text-[#3F8CA9]">サマースクールプログラム</h3>
+                <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>サマースクールプログラム</h3>
                 <p className="text-gray-700 text-lg mb-4">
                   夏休み期間を利用した短期留学プログラムです。語学力の向上はもちろん、現地の文化体験や国際交流を通じて、グローバルな視野を広げることができます。
                 </p>
-                <ul className="text-base text-gray-700 space-y-2">
+                <ul className="text-gray-700 text-sm space-y-2 mb-6">
                   <li>➤ 2週間〜8週間の短期プログラム</li>
                   <li>➤ 英語集中コース</li>
                   <li>➤ アカデミックコース</li>
                   <li>➤ スポーツ・芸術活動</li>
                 </ul>
-                <div className="mt-8">
-                  <a
-                    href="https://boardingschool.jp/summer-school-program/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
+                <div className="mt-6">
+                  <a href="https://boardingschool.jp/summer-school/" className="bg-bsc-gold text-white py-2 px-4 rounded hover:bg-yellow-600 transition">
                     詳細を見る
                   </a>
                 </div>
