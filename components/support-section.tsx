@@ -37,9 +37,9 @@ export function SupportSection() {
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
               <img
-                src="/images/boarding-support.png"
-                alt="ボーディングスクール留学サポート"
-                className="object-cover w-full transition-transform duration-500 group-hover:scale-110"
+                src="/images/boarding-support.png?v=1"
+                alt="ボーディングスクールサポート"
+                className="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学サポート</h3>
@@ -74,12 +74,12 @@ export function SupportSection() {
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
               <img
-                src="/images/summer-support.png"
+                src="/images/summer-support.png?v=1"
                 alt="サマースクールプログラムサポート"
-                className="object-cover w-full transition-transform duration-500 group-hover:scale-110"
+                className="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-bsc-blue">サマースクールプログラムサポート</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#2a7c9f]">サマースクールプログラムサポート</h3>
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li>✓ プログラム選定アドバイス</li>
                   <li>✓ 応募書類の準備と提出</li>
