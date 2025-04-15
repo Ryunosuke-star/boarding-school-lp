@@ -35,12 +35,16 @@ export default function SupportSection() {
             transition={{ delay: 0.1 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+            <div className="relative overflow-hidden bg-white shadow-md rounded-lg min-h-[720px]">
               <img
                 src="/images/boarding-support.png"
                 alt="ボーディングスクールサポート"
-                className="w-full object-cover object-center scale-100"
+                className="w-full object-cover object-center scale-95"
               />
+              <div className="bg-black text-white py-4 text-center font-bold">
+                ボーディングスクール留学のサポート内容<br />
+                （1年以上の長期留学）
+              </div>
               <ul className="text-sm text-gray-700 space-y-2 p-6">
                 <li>✓ 個別カウンセリング</li>
                 <li>✓ 学校選定アドバイス</li>
@@ -70,16 +74,19 @@ export default function SupportSection() {
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+            <div className="relative overflow-hidden bg-white shadow-md rounded-lg min-h-[720px]">
               <img
                 src="/images/summer-support.png"
                 alt="サマースクールサポート"
-                className="w-full object-cover object-center scale-100"
+                className="w-full object-cover object-center scale-95"
               />
-              
+              <div className="bg-black text-white py-4 text-center font-bold">
+                サマースクールプログラムのサポート内容<br />
+                （2〜5週間の短期留学）
+              </div>
               <ul className="text-sm text-gray-700 space-y-2 p-6">
                 <li>✓ プログラム選定アドバイス</li>
                 <li>✓ 応募書類の準備と提出サポート</li>
