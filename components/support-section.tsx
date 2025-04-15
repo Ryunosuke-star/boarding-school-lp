@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import { FileText, Sun } from "lucide-react"
 
-export function SupportSection() {
+function SupportSection() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -36,17 +37,14 @@ export function SupportSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <div className="bg-[#b83538] h-72 w-full flex items-center justify-center">
-                <img
-                  src="/images/support-boarding.png"
-                  alt="Boarding School Support"
-                  className="object-contain h-32"
-                />
-              </div>
-              <div className="bg-black text-white text-center py-4 px-2 text-sm font-semibold">
-                ボーディングスクール留学のサポート内容
-                <br />
-                （1年以上の長期留学）
+              <img
+                src="/images/support-boarding.jpg"
+                alt="ボーディングスクールサポート"
+                className="w-full h-64 object-cover"
+              />
+              <div className="bg-black text-white text-center py-2">
+                <div className="font-bold">ボーディングスクール留学のサポート内容</div>
+                <div className="text-sm">（1年以上の長期留学）</div>
               </div>
               <div className="p-6">
                 <ul className="text-sm text-gray-700 space-y-2">
@@ -83,17 +81,14 @@ export function SupportSection() {
             className="card group"
           >
             <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <div className="bg-[#3c8fa7] h-72 w-full flex items-center justify-center">
-                <img
-                  src="/images/support-summer.png"
-                  alt="Summer School Support"
-                  className="object-contain h-32"
-                />
-              </div>
-              <div className="bg-black text-white text-center py-4 px-2 text-sm font-semibold">
-                サマースクールプログラムのサポート内容
-                <br />
-                （2～5週間の短期留学）
+              <img
+                src="/images/support-summer.jpg"
+                alt="サマースクールプログラムサポート"
+                className="w-full h-64 object-cover"
+              />
+              <div className="bg-black text-white text-center py-2">
+                <div className="font-bold">サマースクールプログラムのサポート内容</div>
+                <div className="text-sm">（2～5週間の短期留学）</div>
               </div>
               <div className="p-6">
                 <ul className="text-sm text-gray-700 space-y-2">
@@ -124,3 +119,5 @@ export function SupportSection() {
     </section>
   )
 }
+
+export default SupportSection
