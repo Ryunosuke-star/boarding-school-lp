@@ -41,7 +41,7 @@ const SupportSection = () => {
                 alt="Boarding School Support"
                 layout="fill"
                 objectFit="cover"
-                className="transition-transform duration-500 group-hover:scale-110"
+                className="transition-transform duration-500 group-hover:scale-100"
               />
             </div>
           </Link>
@@ -84,7 +84,7 @@ const SupportSection = () => {
                 alt="Summer School Program Support"
                 layout="fill"
                 objectFit="cover"
-                className="transition-transform duration-500 group-hover:scale-110"
+                className="transition-transform duration-500 group-hover:scale-100"
               />
             </div>
           </Link>

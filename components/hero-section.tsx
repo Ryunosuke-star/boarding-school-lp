@@ -1,24 +1,51 @@
 "use client"
 
-const HeroSection = () => {
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import { ChevronDown } from "lucide-react"
+
+export function HeroSection() {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
-    <section className="bg-[url('/images/hero-bg.jpg')] bg-cover bg-center py-32 text-white text-center">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-md">
-          世界に羽ばたく、未来を創る。
+    <section className="relative h-screen w-full overflow-hidden">
+      <Image
+  src="/images/hero.jpg"
+  alt="新しいヒーローイメージの説明"
+  fill
+  className="object-cover"
+  priority
+/>
+      <div
+        className={`absolute bottom-0 left-0 p-10 z-20 transition-all duration-1000 transform ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        }`}
+      >
+        <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+          For the
         </h1>
-        <p className="text-lg md:text-2xl mb-8 drop-shadow-md">
-          ボーディングスクール留学を通じて広がる無限の可能性
-        </p>
-        <a
-          href="#contact"
-          className="bg-bsc-gold hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded transition duration-300 shadow-lg"
-        >
-          無料で相談してみる
-        </a>
+        <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+          Future
+        </h1>
       </div>
+      <button
+        onClick={scrollToAbout}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce"
+        aria-label="Scroll down"
+      >
+        <ChevronDown size={36} />
+      </button>
     </section>
   )
 }
-
-export default HeroSection
