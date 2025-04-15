@@ -14,9 +14,9 @@ export function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 relative">
           <h2 className="section-title text-4xl font-bold mb-4 relative inline-block">
-            About Us
-            {/* 下線をUsまで伸ばす */}
-            <span className="block w-full h-1 bg-bsc-red absolute -bottom-2 left-0"></span>
+            <span className="relative z-10">About Us</span>
+            {/* 下線をUsまで伸ばす（上に重ならないようにz-indexで調整） */}
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-bsc-red z-0"></span>
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ export function AboutSection() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-bsc-red" />
           </div>
 
-          <div className="md:w-1/2 space-y-8 text-lg"> {/* ← フォント拡大 */}
+          <div className="md:w-1/2 space-y-8 text-lg">
             <div>
               <h3 className="text-3xl font-bold mb-4 text-bsc-dark">
                 ボーディングスクールコンサルティング株式会社（BSC）
@@ -73,7 +73,12 @@ export function AboutSection() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-6">
-              <a href="#contact" className="btn-primary">
+              <a
+                href="https://boardingschool.jp/contact/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 お問い合わせ
               </a>
             </div>
