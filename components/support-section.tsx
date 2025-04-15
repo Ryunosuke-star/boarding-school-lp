@@ -28,8 +28,8 @@ const SupportSection = () => {
           ボーディングスクールコンサルティングでは、留学前から留学中、そして卒業後まで、生徒の皆さんを全面的にサポートします。
         </p>
       </div>
-      <div className="max-w-2xl mx-auto flex flex-col lg:flex-row gap-8 justify-center items-stretch">
-        {/* Boarding School Support */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* Boarding School Support */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="flex-1 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
