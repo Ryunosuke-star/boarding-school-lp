@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function SupportSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -23,80 +24,58 @@ export function SupportSection() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={isVisible ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
+          className="grid grid-cols-1 md:grid-cols-2 gap-12"
         >
-          {/* ボーディングスクールサポート */}
+          {/* ボーディングスクール */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="card group"
+            className="rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-500"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <img
-                src="/images/boarding-support.png?v=1"
-                alt="ボーディングスクールサポート"
-                className="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110"
+            <div className="relative h-48 w-full">
+              <Image
+                src="/images/boarding-support.png"
+                alt="Boarding School Support"
+                layout="fill"
+                objectFit="cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学サポート</h3>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  <li>✓ 個別カウンセリング</li>
-                  <li>✓ 学校選定アドバイス</li>
-                  <li>✓ 出願戦略の立案</li>
-                  <li>✓ 書類準備・添削</li>
-                  <li>✓ 面接対策</li>
-                  <li>✓ 保護者への報告</li>
-                </ul>
-                <div className="mt-4">
-                  <a
-                    href="https://boardingschool.jp/support-boarding-school/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
-                  >
-                    詳細を見る
-                  </a>
-                </div>
+              <div className="absolute inset-0 bg-[#ba1b1d] bg-opacity-90 flex flex-col justify-center items-center text-white text-center p-4">
+                <h3 className="text-lg">BSC's Support</h3>
+                <h2 className="text-2xl font-bold">Boarding School</h2>
               </div>
+            </div>
+            <div className="bg-black text-white text-center py-3 px-4">
+              <p className="text-sm">ボーディングスクール留学のサポート内容</p>
+              <p className="text-xs mt-1">（１年以上の長期留学）</p>
             </div>
           </motion.div>
 
-          {/* サマースクールサポート */}
+          {/* サマースクール */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
             transition={{ delay: 0.3 }}
-            className="card group"
+            className="rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-500"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
-              <img
-                src="/images/summer-support.png?v=1"
-                alt="サマースクールプログラムサポート"
-                className="object-cover w-full h-48 transition-transform duration-500 group-hover:scale-110"
+            <div className="relative h-48 w-full">
+              <Image
+                src="/images/summer-support.png"
+                alt="Summer School Support"
+                layout="fill"
+                objectFit="cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#2a7c9f]">サマースクールプログラムサポート</h3>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  <li>✓ プログラム選定アドバイス</li>
-                  <li>✓ 応募書類の準備と提出</li>
-                  <li>✓ 英語力確認・事前課題支援</li>
-                  <li>✓ 緊急時対応・保護者報告</li>
-                </ul>
-                <div className="mt-4">
-                  <a
-                    href="https://boardingschool.jp/support-summer-school/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-bsc-gold font-bold hover:text-amber-600 transition-colors duration-300"
-                  >
-                    詳細を見る
-                  </a>
-                </div>
+              <div className="absolute inset-0 bg-[#388593] bg-opacity-90 flex flex-col justify-center items-center text-white text-center p-4">
+                <h3 className="text-lg">BSC's Support</h3>
+                <h2 className="text-2xl font-bold">Summer School Program</h2>
               </div>
+            </div>
+            <div className="bg-black text-white text-center py-3 px-4">
+              <p className="text-sm">サマースクールプログラムのサポート内容</p>
+              <p className="text-xs mt-1">（２〜５週間の短期留学）</p>
             </div>
           </motion.div>
         </motion.div>
