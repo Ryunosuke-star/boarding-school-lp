@@ -41,7 +41,6 @@ export default function SupportSection() {
                 alt="ボーディングスクールサポート"
                 className="w-full object-cover object-center scale-100"
               />
-              >
               <ul className="text-sm text-gray-700 space-y-2 p-6">
                 <li>✓ 個別カウンセリング</li>
                 <li>✓ 学校選定アドバイス</li>
