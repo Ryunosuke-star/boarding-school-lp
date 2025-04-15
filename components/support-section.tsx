@@ -74,7 +74,7 @@ export default function SupportSection() {
             transition={{ delay: 0.3 }}
             className="card group"
           >
-            <div className="relative overflow-hidden bg-white shadow-md rounded-lg min-h-[800px]">
+            <div className="relative overflow-hidden bg-white shadow-md rounded-lg min-h-[720px]">
               <img
                 src="/images/summer-support.png"
                 alt="サマースクールサポート"
