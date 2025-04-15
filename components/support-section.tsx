@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
-export default function SupportSection() {
+export function SupportSection() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function SupportSection() {
           transition={{ duration: 1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000"
         >
-          {/* ボーディングスクールサポート */}
+          {/* Boarding School Support */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
@@ -39,10 +39,10 @@ export default function SupportSection() {
               <img
                 src="/images/boarding-support.png"
                 alt="ボーディングスクールサポート"
-                className="w-full object-cover object-center scale-100"
+                className="object-cover w-full scale-100"
               />
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col justify-between h-full">
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li>✓ 個別カウンセリング</li>
                   <li>✓ 学校選定アドバイス</li>
@@ -55,7 +55,7 @@ export default function SupportSection() {
                   <li>✓ 保護者への報告</li>
                   <li>✓ 合格後の手続き支援</li>
                 </ul>
-                <div className="mt-4">
+                <div className="mt-6">
                   <a
                     href="https://boardingschool.jp/support-boarding-school/"
                     target="_blank"
@@ -69,7 +69,7 @@ export default function SupportSection() {
             </div>
           </motion.div>
 
-          {/* サマースクールサポート */}
+          {/* Summer School Support */}
           <motion.div
             initial={{ opacity: 0, translateY: 30 }}
             animate={isVisible ? { opacity: 1, translateY: 0 } : {}}
@@ -80,10 +80,10 @@ export default function SupportSection() {
               <img
                 src="/images/summer-support.png"
                 alt="サマースクールサポート"
-                className="w-full object-cover object-center scale-100"
+                className="object-cover w-full scale-100"
               />
-
-              <div className="p-6">
+              
+              <div className="p-6 flex flex-col justify-between h-full">
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li>✓ プログラム選定アドバイス</li>
                   <li>✓ 応募書類の準備と提出サポート</li>
@@ -94,7 +94,7 @@ export default function SupportSection() {
                   <li>✓ 緊急時対応</li>
                   <li>✓ 保護者への報告</li>
                 </ul>
-                <div className="mt-4">
+                <div className="mt-6">
                   <a
                     href="https://boardingschool.jp/support-summer-school/"
                     target="_blank"
