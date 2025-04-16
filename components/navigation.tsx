@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   return (
     <header className="fixed top-0 left-0 z-50 w-full flex items-center bg-white h-[100px] shadow-md">
-      {/* 左側：ロゴ */}
+      {/* 左：ロゴ */}
       <div className="w-[400px] bg-white flex items-center justify-center h-full">
         <Image
           src="/images/bsc-logo.jpg"
@@ -17,29 +17,26 @@ export default function Navigation() {
         />
       </div>
 
-      {/* 右側：ナビゲーションリンク */}
-      <nav className="flex-1 flex justify-end h-full">
-        <ul className="flex h-full text-white text-lg font-medium">
-          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
-            <Link href="#about" className="hover:underline">
-              会社情報
-            </Link>
-          </li>
-          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
-            <Link href="#programs" className="hover:underline">
-              留学プログラム
-            </Link>
-          </li>
-          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
-            <Link href="#support" className="hover:underline">
-              BSCのサポート
-            </Link>
-          </li>
-          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
-            <Link href="#contact" className="hover:underline">
-              お問い合わせ
-            </Link>
-          </li>
+      {/* 右：ナビゲーション */}
+      <nav className="flex-1 h-full bg-[#c6a664]">
+        <ul className="flex flex-col sm:flex-row h-full text-white text-base sm:text-lg font-medium w-full">
+          {[
+            { href: "#about", label: "会社情報" },
+            { href: "#programs", label: "留学プログラム" },
+            { href: "#support", label: "BSCのサポート" },
+            { href: "#contact", label: "お問い合わせ" },
+          ].map((item, index) => (
+            <li
+              key={item.href}
+              className={`flex items-center justify-center px-4 py-3 border-white bg-[#c6a664] ${
+                index === 0 ? "" : "border-t sm:border-l"
+              }`}
+            >
+              <Link href={item.href} className="w-full text-center hover:underline">
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
