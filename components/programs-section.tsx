@@ -17,8 +17,8 @@ export default function ProgramsSection() {
       <h2 className="text-4xl font-bold text-center mb-6 relative inline-block after:block after:w-full after:h-1 after:bg-red-500 after:mt-1">
         Our Programs
       </h2>
-      <p className="text-base text-gray-700 text-center max-w-full">
-        ボーディングスクールコンサルティングでは、お子様の希望に合わせた最適な留学プログラムをご提案しています。
+      <p className="text-base text-gray-700 mt-2">
+      ボーディングスクールコンサルティングでは、お子様の希望に合わせた最適な留学プログラムをご提案しています。
       </p>
     </div>
 
@@ -44,8 +44,8 @@ export default function ProgramsSection() {
             />
           </a>
 
-          <div className="p-6">
-            <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
+          <div className="p-6 flex flex-col justify-between h-full">
+          <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
             <p className="text-gray-700 text-lg mb-4">
               ボーディングスクールは、志・目標を持つ学生が世界中から集う全寮制の私立校です。
               国際的視野とリーダーシップを育成するうえで最高峰の教育環境を提供します。
@@ -85,8 +85,8 @@ export default function ProgramsSection() {
             />
           </a>
 
-          <div className="p-6">
-            <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>サマースクールプログラム</h3>
+          <div className="p-6 flex flex-col justify-between h-full">
+           <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>サマースクールプログラム</h3>
             <p className="text-gray-700 text-lg mb-4">
               サマースクールプログラムは、語学力の向上とともに、多様な文化や価値観への理解を深め、国際的視野を養う貴重な機会です。
               将来的な長期留学の準備として活用することも可能です。
