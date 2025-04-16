@@ -72,7 +72,7 @@ export function AboutSection() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex flex-wrap gap-4 mt-6 text-center">
               <a
                 href="https://boardingschool.jp/contact/"
                 target="_blank"
