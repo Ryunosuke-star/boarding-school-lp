@@ -47,7 +47,7 @@ export default function ContactSection() {
             <p className="text-gray-700 text-lg mb-4">
             電話でのお問い合わせ</p>
             <p className="text-gray-700 text-lg mb-4">
-              03-6555-1642 <span className="text-xs">[平日 10:00-17:00]</span>
+              03-6555-1642 <span className="text-xs">[火～土 10:00-17:00]</span>
             </p>
           </a>
         </div>
