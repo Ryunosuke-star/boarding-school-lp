@@ -1,18 +1,25 @@
-"use client"
-import { useEffect, useState } from "react"
-import Image from "next/image"
-import { ChevronDown } from "lucide-react"
-export function HeroSection() {
-  const [isVisible, setIsVisible] = useState(false)
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
+
+
+export default function HeroSection() {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
+    setIsVisible(true);
+  }, []);
+
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" })
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
+
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Image
@@ -22,29 +29,38 @@ export function HeroSection() {
         className="object-cover"
         priority
       />
-      <div>
-        <div
-          className={`absolute bottom-0 left-0 p-10 z-20 transition-all duration-1000 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}
-        >
-          <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-            For the
-          </h1>
-          <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-            Future
-          </h1>
+
+      <motion.div
+        className="absolute bottom-24 left-8 md:left-20 text-white z-10"
+        initial={{ opacity: 0, y: 30 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="relative h-[6rem] md:h-[8rem] lg:h-[10rem] w-auto mb-4">
+          <Image
+            src="/images/Forthe.png"
+            alt="For the"
+            fill
+            className="object-contain"
+            priority
+          />
         </div>
-        <button
-          onClick={scrollToAbout}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce"
-          aria-label="scroll down"
-        >
-          <ChevronDown size={36} />
+        <div className="relative h-[6rem] md:h-[8rem] lg:h-[10rem] w-auto">
+          <Image
+            src="/images/Future.png"
+            alt="Future"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </motion.div>
+
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+        <button onClick={scrollToAbout}>
+          <ChevronDown className="text-white w-8 h-8 animate-bounce" />
         </button>
       </div>
     </section>
-  )
+  );
 }
-// :下向き指差し: default export を追加
-export default HeroSection
