@@ -10,7 +10,8 @@ const Footer = () => {
           <h4 className="font-bold text-lg mb-4">会社情報</h4>
           <ul className="space-y-2">
             <li>ボーディングスクールコンサルティング株式会社</li>
-            <li>〒103-0004 東京都中央区東日本橋一丁目5番6号</li>
+            <li>〒103-0004 </li>
+            <li>東京都中央区東日本橋一丁目5番6号</li>
             <li>03-6555-1642</li>
           </ul>
         </div>
