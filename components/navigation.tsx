@@ -1,13 +1,14 @@
-"use client"
+// components/navigation.tsx
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex">
-      {/* 左半分（ロゴ＋白背景） */}
-      <div className="bg-white flex items-center justify-center px-6 h-20 w-[300px]">
+    <header className="fixed top-0 left-0 w-full z-50 shadow-md flex">
+      {/* 左：ロゴ部分（白背景） */}
+      <div className="bg-white flex items-center px-6 py-4">
         <Image
           src="/images/bsc-logo.jpg"
           alt="Boarding School Consulting Inc."
@@ -17,30 +18,26 @@ export default function Navigation() {
         />
       </div>
 
-      {/* 右半分（ナビゲーションリンク＋ベージュ背景） */}
-      <nav className="bg-[#c6a664] flex items-center text-white text-[1.25rem] font-medium h-20 w-full">
-        <ul className="flex w-full h-full">
+      {/* 右：ナビゲーション（#c6a664背景 & 左詰） */}
+      <nav className="flex-grow bg-[#c6a664] text-white text-lg font-medium flex items-center">
+        <ul className="flex ml-4">
           {[
-            { href: "#programs", label: "Boarding School" },
-            { href: "#programs", label: "Summer School Program" },
-            { href: "#support", label: "BSC's Support" },
-            { href: "#events", label: "Events" },
-            { href: "#about", label: "About us" },
-            { href: "#contact", label: "Contact" },
-          ].map(({ href, label }, index) => (
+            { href: "#about", label: "会社情報" },
+            { href: "#programs", label: "留学プログラム" },
+            { href: "#support", label: "BSCのサポート" },
+            { href: "#contact", label: "お問い合わせ" },
+          ].map((item, index) => (
             <li
-              key={label}
-              className={`h-full flex items-center px-6 border-white ${
-                index !== 0 ? "border-l" : ""
+              key={item.href}
+              className={`px-6 py-4 hover:underline border-l border-white ${
+                index === 0 ? "border-l-0" : ""
               }`}
             >
-              <Link href={href} className="hover:underline w-full text-center">
-                {label}
-              </Link>
+              <Link href={item.href}>{item.label}</Link>
             </li>
           ))}
         </ul>
       </nav>
     </header>
-  )
+  );
 }
