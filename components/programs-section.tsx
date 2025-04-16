@@ -35,7 +35,7 @@ export default function ProgramsSection() {
         transition={{ delay: 0.1 }}
         className="card group"
       >
-        <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+        <div className="relative overflow-hidden bg-white shadow-md rounded-lg h-full flex flex-col">
           <a href="https://boardingschool.jp/about/" target="_blank" rel="noopener noreferrer">
             <img
               src="/images/boarding-school.png"
@@ -44,21 +44,23 @@ export default function ProgramsSection() {
             />
           </a>
 
-          <div className="p-6 flex flex-col justify-between h-full">
-          <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
-            <p className="text-gray-700 text-lg mb-4">
-              ボーディングスクールは、志・目標を持つ学生が世界中から集う全寮制の私立校です。
-              国際的視野とリーダーシップを育成するうえで最高峰の教育環境を提供します。
-            </p>
-            <ul className="text-gray-700 text-sm space-y-2 mb-6">
-              <li>➤ 卓越した学習環境</li>
-              <li>➤ 自立心と責任感の形成</li>
-              <li>➤ 多様性への理解</li>
-              <li>➤ 豊富な課外活動</li>
-              <li>➤ キャリア教育と大学進学サポート</li>
-              <li>➤ 最先端の設備とテクノロジーの導入</li>                  
-              <li>➤ リーダーシップ教育と社会的責任</li>
-            </ul>
+          <div className="p-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-bsc-red">ボーディングスクール留学</h3>
+              <p className="text-gray-700 text-lg mb-4">
+                ボーディングスクールは、志・目標を持つ学生が世界中から集う全寮制の私立校です。
+                国際的視野とリーダーシップを育成するうえで最高峰の教育環境を提供します。
+              </p>
+              <ul className="text-gray-700 text-sm space-y-2 mb-6">
+                <li>➤ 卓越した学習環境</li>
+                <li>➤ 自立心と責任感の形成</li>
+                <li>➤ 多様性への理解</li>
+                <li>➤ 豊富な課外活動</li>
+                <li>➤ キャリア教育と大学進学サポート</li>
+                <li>➤ 最先端の設備とテクノロジーの導入</li>                  
+                <li>➤ リーダーシップ教育と社会的責任</li>
+              </ul>
+            </div>
             <div className="mt-6 text-left">
               <a href="https://boardingschool.jp/about/" 
               className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
@@ -76,7 +78,7 @@ export default function ProgramsSection() {
         transition={{ delay: 0.3 }}
         className="card group"
       >
-        <div className="relative overflow-hidden bg-white shadow-md rounded-lg">
+        <div className="relative overflow-hidden bg-white shadow-md rounded-lg h-full flex flex-col">
           <a href="https://boardingschool.jp/summer-school/" target="_blank" rel="noopener noreferrer">
             <img
               src="/images/summer-program.png"
@@ -85,18 +87,20 @@ export default function ProgramsSection() {
             />
           </a>
 
-          <div className="p-6 flex flex-col justify-between h-full">
-           <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>サマースクールプログラム</h3>
-            <p className="text-gray-700 text-lg mb-4">
-              サマースクールプログラムは、語学力の向上とともに、多様な文化や価値観への理解を深め、国際的視野を養う貴重な機会です。
-              将来的な長期留学の準備として活用することも可能です。
-            </p>
-            <ul className="text-gray-700 text-sm space-y-2 mb-6">
-              <li>➤ 多様な文化体験/世界に対する興味と理解を身につける異文化理解</li>
-              <li>➤ 個人の成長と自立心の育成/将来のボーディングスクール留学へのステップ</li>
-              <li>➤ 効果的な英語学習</li>
-              <li>➤ 英語学習にプラスアルファした特定のプログラムの提供</li>
-            </ul>
+          <div className="p-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h3 className="text-xl font-bold mb-4" style={{ color: "#36869D" }}>サマースクールプログラム</h3>
+              <p className="text-gray-700 text-lg mb-4">
+                サマースクールプログラムは、語学力の向上とともに、多様な文化や価値観への理解を深め、国際的視野を養う貴重な機会です。
+                将来的な長期留学の準備として活用することも可能です。
+              </p>
+              <ul className="text-gray-700 text-sm space-y-2 mb-6">
+                <li>➤ 多様な文化体験/世界に対する興味と理解を身につける異文化理解</li>
+                <li>➤ 個人の成長と自立心の育成/将来のボーディングスクール留学へのステップ</li>
+                <li>➤ 効果的な英語学習</li>
+                <li>➤ 英語学習にプラスアルファした特定のプログラムの提供</li>
+              </ul>
+            </div>
             <div className="mt-6 text-left">
               <a href="https://boardingschool.jp/summer-school/" className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
                 詳細を見る
