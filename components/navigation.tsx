@@ -2,12 +2,15 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center bg-white">
-      {/* ロゴ */}
-      <div className="bg-white px-4 py-2">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+      <div className="flex items-center justify-between px-4 py-2">
+        {/* ロゴ */}
         <Image
           src="/images/bsc-logo.jpg"
           alt="Boarding School Consulting Inc."
@@ -15,30 +18,52 @@ export default function Navigation() {
           height={60}
           className="object-contain"
         />
+
+        {/* ハンバーガーアイコン（モバイル表示のみ） */}
+        <button
+          className="md:hidden flex flex-col justify-center items-center space-y-1"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span className="w-6 h-0.5 bg-black" />
+          <span className="w-6 h-0.5 bg-black" />
+          <span className="w-6 h-0.5 bg-black" />
+        </button>
       </div>
 
-      {/* ナビゲーションメニュー */}
-      <nav className="flex-1">
-        <ul className="flex justify-end flex-wrap sm:flex-nowrap text-white text-sm sm:text-[1.25rem] font-medium w-full">
+      {/* モバイルメニュー */}
+      {isOpen && (
+        <nav className="md:hidden bg-[#c6a664] text-white text-center">
+          <ul className="flex flex-col">
+            <li className="border-t border-white">
+              <Link href="#about" className="block py-4 hover:underline" onClick={() => setIsOpen(false)}>会社情報</Link>
+            </li>
+            <li className="border-t border-white">
+              <Link href="#programs" className="block py-4 hover:underline" onClick={() => setIsOpen(false)}>留学プログラム</Link>
+            </li>
+            <li className="border-t border-white">
+              <Link href="#support" className="block py-4 hover:underline" onClick={() => setIsOpen(false)}>BSCのサポート</Link>
+            </li>
+            <li className="border-t border-white">
+              <Link href="#contact" className="block py-4 hover:underline" onClick={() => setIsOpen(false)}>お問い合わせ</Link>
+            </li>
+          </ul>
+        </nav>
+      )}
+
+      {/* PC用ナビゲーション（変更なし） */}
+      <nav className="hidden md:flex justify-end text-white text-sm md:text-[1.25rem] font-medium">
+        <ul className="flex w-full">
           <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
-            <Link href="#about" className="block text-center hover:underline">
-              会社情報
-            </Link>
+            <Link href="#about" className="block text-center hover:underline">会社情報</Link>
           </li>
           <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
-            <Link href="#programs" className="block text-center hover:underline">
-              留学プログラム
-            </Link>
+            <Link href="#programs" className="block text-center hover:underline">留学プログラム</Link>
           </li>
           <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
-            <Link href="#support" className="block text-center hover:underline">
-              BSCのサポート
-            </Link>
+            <Link href="#support" className="block text-center hover:underline">BSCのサポート</Link>
           </li>
           <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
-            <Link href="#contact" className="block text-center hover:underline">
-              お問い合わせ
-            </Link>
+            <Link href="#contact" className="block text-center hover:underline">お問い合わせ</Link>
           </li>
         </ul>
       </nav>
