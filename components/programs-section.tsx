@@ -63,7 +63,7 @@ export default function ProgramsSection() {
             </div>
             <div className="mt-6 text-center">
             <a href="https://boardingschool.jp/about/" 
-              className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
+              className="inline-block bg-[#c6a664] text-white text-base py-2 px-4 rounded shadow hover:opacity-90 transition">
                 詳細を見る
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function ProgramsSection() {
               </ul>
             </div>
             <div className="mt-6 text-center">
-            <a href="https://boardingschool.jp/summer-school/" className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
+            <a href="https://boardingschool.jp/summer-school/" className="inline-block bg-[#c6a664] text-white text-base py-2 px-4 rounded shadow hover:opacity-90 transition">
                 詳細を見る
               </a>
             </div>
