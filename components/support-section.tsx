@@ -17,16 +17,15 @@ export default function SupportSection() {
       </div>
 
       <div className="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Boarding School Box */}
+        {/* Boarding School Box */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden flex-1 flex flex-col">
           <Link href="https://boardingschool.jp/support-boarding-school/" passHref>
-            <div className="overflow-hidden group cursor-pointer">
+            <div className="aspect-[3/2] overflow-hidden relative group cursor-pointer">
               <Image
                 src="/images/boarding-support.png"
                 alt="BSC Boarding School Support"
-                width={600}
-                height={400}
-                className="w-full h-auto transform group-hover:scale-105 transition-transform duration-300"
+                fill
+                className="object-cover transition-transform group-hover:scale-105 duration-300"
               />
             </div>
           </Link>
@@ -62,13 +61,12 @@ export default function SupportSection() {
         {/* Summer School Box */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden flex-1 flex flex-col">
           <Link href="https://boardingschool.jp/support-summer-school/" passHref>
-            <div className="overflow-hidden group cursor-pointer">
+            <div className="aspect-[3/2] overflow-hidden relative group cursor-pointer">
               <Image
                 src="/images/summer-support.png"
                 alt="BSC Summer School Support"
-                width={600}
-                height={400}
-                className="w-full h-auto transform group-hover:scale-105 transition-transform duration-300"
+                fill
+                className="object-cover transition-transform group-hover:scale-105 duration-300"
               />
             </div>
           </Link>
