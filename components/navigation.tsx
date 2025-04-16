@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <header className="fixed top-0 left-0 z-50 w-full flex items-center bg-white h-[100px] shadow-md">
-      {/* 左：ロゴ */}
-      <div className="w-[400px] bg-white flex items-center justify-center h-full">
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center bg-white">
+      {/* ロゴエリア */}
+      <div className="bg-white px-4 py-2">
         <Image
           src="/images/bsc-logo.jpg"
           alt="Boarding School Consulting Inc."
@@ -17,26 +17,21 @@ export default function Navigation() {
         />
       </div>
 
-      {/* 右：ナビゲーション */}
-      <nav className="flex-1 h-full bg-[#c6a664]">
-        <ul className="flex flex-col sm:flex-row h-full text-white text-base sm:text-lg font-medium w-full">
-          {[
-            { href: "#about", label: "会社情報" },
-            { href: "#programs", label: "留学プログラム" },
-            { href: "#support", label: "BSCのサポート" },
-            { href: "#contact", label: "お問い合わせ" },
-          ].map((item, index) => (
-            <li
-              key={item.href}
-              className={`flex items-center justify-center px-4 py-3 border-white bg-[#c6a664] ${
-                index === 0 ? "" : "border-t sm:border-l"
-              }`}
-            >
-              <Link href={item.href} className="w-full text-center hover:underline">
-                {item.label}
-              </Link>
-            </li>
-          ))}
+      {/* ナビゲーション */}
+      <nav className="flex-1">
+        <ul className="flex justify-end flex-wrap sm:flex-nowrap text-white text-sm sm:text-base font-medium">
+          <li className="bg-[#c6a664] px-4 py-5 border-l border-white whitespace-nowrap">
+            <a href="#about" className="block text-center hover:underline">会社情報</a>
+          </li>
+          <li className="bg-[#c6a664] px-4 py-5 border-l border-white whitespace-nowrap">
+            <a href="#programs" className="block text-center hover:underline">留学プログラム</a>
+          </li>
+          <li className="bg-[#c6a664] px-4 py-5 border-l border-white whitespace-nowrap">
+            <a href="#support" className="block text-center hover:underline">BSCのサポート</a>
+          </li>
+          <li className="bg-[#c6a664] px-4 py-5 border-l border-white whitespace-nowrap">
+            <a href="#contact" className="block text-center hover:underline">お問い合わせ</a>
+          </li>
         </ul>
       </nav>
     </header>
