@@ -16,8 +16,8 @@ export default function ContactSection() {
           <p className="text-gray-700">お問い合わせ</p>
         </div>
 
-        <div className="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000">
-          {/* お問い合わせフォーム */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000">
+                    {/* お問い合わせフォーム */}
           <a
             href="https://boardingschool.jp/contact/"
             target="_blank"
