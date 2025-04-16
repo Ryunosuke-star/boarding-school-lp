@@ -14,9 +14,9 @@ export default function ProgramsSection() {
     <section className="py-24 bg-bsc-light">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-16 text-center">
-          <h2 className="text-4xl font-bold text-center mb-6 underline underline-offset-4 decoration-red-500">
+        <h2 className="text-4xl font-bold text-center mb-6 relative inline-block after:block after:w-full after:h-1 after:bg-red-500 after:mt-2">
             Our Programs
-          </h2>
+        </h2>
           <p className="text-gray-700 text-lg">
             ボーディングスクールコンサルティングでは、生徒の皆さんに最適な留学プログラムをご提案しています。
           </p>
