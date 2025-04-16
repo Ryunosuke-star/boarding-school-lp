@@ -32,13 +32,13 @@ export default function SupportSection() {
           </Link>
           <div className="p-6 flex flex-col flex-grow justify-between">
             <div>
-              <h3 className="text-base font-semibold mb-2 text-bsc-red">
+              <h3 className="text-base font-semibold mb-2 text-bsc-blue">
               BSCは、留学相談から卒業までを包括的に支援し、豊富な知見に基づく学校選定と進学コンサルティングを提供します。
               国内外のネットワークを活かし、長期的な学びと成長を支えます。</h3>
               <ul className="list-disc list-inside space-y-1 text-sm">
               <li>4月：留学相談</li>
-　　　　　　　　<li>6～11月：学校選定コンサルティング</li>
-　　　　　　　　<li>7～2月：受験サポート</li>
+              <li>6～11月：学校選定コンサルティング</li>
+              <li>7～2月：受験サポート</li>
               <li>11～2月：出願・願書提出</li>
               <li>1～4月：合格発表</li>
               <li>3～4月：進学先決定コンサルティング</li>
