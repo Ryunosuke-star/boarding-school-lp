@@ -7,7 +7,8 @@ export default function ContactSection() {
   const router = useRouter()
 
   return (
-    <section className="py-24 bg-bsc-light">
+// 修正後（id="contact" を追加）
+<section id="contact" className="py-24 bg-white text-center">
          <div className="container px-4 mx-auto w-full">
           <div className="max-w-2xl mx-auto mb-16 text-center">
           <h2 className="text-4xl font-bold text-center mb-6 underline underline-offset-4 decoration-red-500">
