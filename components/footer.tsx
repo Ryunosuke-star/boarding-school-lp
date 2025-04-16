@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="#programs" className="hover:underline">
-                サマースクールプログラム留学
+                サマースクールプログラム
               </Link>
             </li>
           </ul>
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="#support" className="hover:underline">
-                サマースクールプログラム留学サポート
+                サマースクールプログラムサポート
               </Link>
             </li>
           </ul>
