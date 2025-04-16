@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 const Footer = () => {
   return (
     <footer className="bg-bsc-dark text-white py-10 text-sm">
@@ -15,15 +17,31 @@ const Footer = () => {
         <div>
           <h4 className="font-bold text-lg mb-4">留学プログラム</h4>
           <ul className="space-y-2">
-            <li>ボーディングスクール留学</li>
-            <li>サマースクールプログラム</li>
+            <li>
+              <Link href="#programs" className="hover:underline">
+                ボーディングスクール留学
+              </Link>
+            </li>
+            <li>
+              <Link href="#programs" className="hover:underline">
+                サマースクールプログラム留学
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-lg mb-4">サポート</h4>
+          <h4 className="font-bold text-lg mb-4">BSCのサポート</h4>
           <ul className="space-y-2">
-            <li>ボーディングスクール留学サポート</li>
-            <li>サマースクールプログラムサポート</li>
+            <li>
+              <Link href="#support" className="hover:underline">
+                ボーディングスクール留学サポート
+              </Link>
+            </li>
+            <li>
+              <Link href="#support" className="hover:underline">
+                サマースクールプログラム留学サポート
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
