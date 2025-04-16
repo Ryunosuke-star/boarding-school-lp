@@ -61,8 +61,8 @@ export default function ProgramsSection() {
                 <li>➤ リーダーシップ教育と社会的責任</li>
               </ul>
             </div>
-            <div className="mt-6 text-left">
-              <a href="https://boardingschool.jp/about/" 
+            <div className="mt-6 text-center">
+            <a href="https://boardingschool.jp/about/" 
               className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
                 詳細を見る
               </a>
@@ -101,8 +101,8 @@ export default function ProgramsSection() {
                 <li>➤ 英語学習にプラスアルファした特定のプログラムの提供</li>
               </ul>
             </div>
-            <div className="mt-6 text-left">
-              <a href="https://boardingschool.jp/summer-school/" className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
+            <div className="mt-6 text-center">
+            <a href="https://boardingschool.jp/summer-school/" className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition">
                 詳細を見る
               </a>
             </div>
