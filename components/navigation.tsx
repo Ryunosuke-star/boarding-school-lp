@@ -1,14 +1,13 @@
-// components/navigation.tsx
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 shadow-md flex">
-      {/* 左：ロゴ部分（白背景） */}
-      <div className="bg-white flex items-center px-6 py-4">
+    <header className="fixed top-0 left-0 z-50 w-full flex items-center bg-white h-[100px] shadow-md">
+      {/* 左側：ロゴ */}
+      <div className="w-[400px] bg-white flex items-center justify-center h-full">
         <Image
           src="/images/bsc-logo.jpg"
           alt="Boarding School Consulting Inc."
@@ -18,24 +17,29 @@ export default function Navigation() {
         />
       </div>
 
-      {/* 右：ナビゲーション（#c6a664背景 & 左詰） */}
-      <nav className="flex-grow bg-[#c6a664] text-white text-lg font-medium flex items-center">
-        <ul className="flex ml-4">
-          {[
-            { href: "#about", label: "会社情報" },
-            { href: "#programs", label: "留学プログラム" },
-            { href: "#support", label: "BSCのサポート" },
-            { href: "#contact", label: "お問い合わせ" },
-          ].map((item, index) => (
-            <li
-              key={item.href}
-              className={`px-6 py-4 hover:underline border-l border-white ${
-                index === 0 ? "border-l-0" : ""
-              }`}
-            >
-              <Link href={item.href}>{item.label}</Link>
-            </li>
-          ))}
+      {/* 右側：ナビゲーションリンク */}
+      <nav className="flex-1 flex justify-end h-full">
+        <ul className="flex h-full text-white text-lg font-medium">
+          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
+            <Link href="#about" className="hover:underline">
+              会社情報
+            </Link>
+          </li>
+          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
+            <Link href="#programs" className="hover:underline">
+              留学プログラム
+            </Link>
+          </li>
+          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
+            <Link href="#support" className="hover:underline">
+              BSCのサポート
+            </Link>
+          </li>
+          <li className="flex items-center justify-center px-8 border-l border-white bg-[#c6a664]">
+            <Link href="#contact" className="hover:underline">
+              お問い合わせ
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
