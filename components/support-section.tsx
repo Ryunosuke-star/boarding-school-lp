@@ -48,7 +48,7 @@ export default function SupportSection() {
               <li>～翌年夏：留学中のサポートとコンサルティング</li>
               </ul>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 text-center">
               <Link
                 href="https://boardingschool.jp/support-boarding-school/"
                 className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition"
@@ -84,7 +84,7 @@ export default function SupportSection() {
               <li>6～8月：現地校への連絡代行、緊急時の対応 等</li>
               </ul>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 text-center">
               <Link
                 href="https://boardingschool.jp/support-summer-school/"
                 className="inline-block bg-[#c6a664] text-white py-2 px-4 rounded shadow hover:opacity-90 transition"
