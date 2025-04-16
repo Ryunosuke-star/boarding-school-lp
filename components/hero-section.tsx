@@ -1,53 +1,50 @@
-"use client";
-
-import Image from "next/image";
-import { motion } from "framer-motion";
-
-export default function HeroSection() {
+"use client"
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import { ChevronDown } from "lucide-react"
+export function HeroSection() {
+  const [isVisible, setIsVisible] = useState(false)
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* ナビゲーションバー */}
-      <div className="fixed top-0 left-0 w-full z-50 shadow-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-          <div className="flex items-center space-x-2 bg-white px-4 py-2">
-            <Image
-              src="/images/bsc-logo.jpg"
-              alt="Boarding School Consulting Inc."
-              width={200}
-              height={80}
-              className="object-contain"
-            />
-          </div>
-          <nav className="text-white text-[1.5rem] bg-[#c6a664] flex-1 flex justify-end space-x-6 px-6 py-4 font-medium">
-            <a href="#about" className="hover:underline">会社情報</a>
-            <a href="#programs" className="hover:underline">留学プログラム</a>
-            <a href="#support" className="hover:underline">BSCのサポート</a>
-            <a href="#contact" className="hover:underline">お問い合わせ</a>
-          </nav>
-        </div>
-      </div>
-
       <Image
         src="/images/hero.jpg"
-        alt="Hero Image"
+        alt="新しいヒーローイメージの説明"
         fill
         className="object-cover"
         priority
       />
-
-      <motion.div
-        className="absolute bottom-24 left-8 md:left-20 text-white z-10"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-          For the
-        </h1>
-        <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-          Future
-        </h1>
-      </motion.div>
+      <div>
+        <div
+          className={`absolute bottom-0 left-0 p-10 z-20 transition-all duration-1000 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          }`}
+        >
+          <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+            For the
+          </h1>
+          <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+            Future
+          </h1>
+        </div>
+        <button
+          onClick={scrollToAbout}
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce"
+          aria-label="scroll down"
+        >
+          <ChevronDown size={36} />
+        </button>
+      </div>
     </section>
-  );
+  )
 }
+// :下向き指差し: default export を追加
+export default HeroSection
