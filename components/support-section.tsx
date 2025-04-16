@@ -16,8 +16,8 @@ export default function SupportSection() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Boarding School Box */}
+      <div className="container px-4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Boarding School Box */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden flex-1 flex flex-col">
           <Link href="https://boardingschool.jp/support-boarding-school/" passHref>
             <div className="overflow-hidden group cursor-pointer">
