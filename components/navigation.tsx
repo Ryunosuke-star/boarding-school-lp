@@ -8,10 +8,10 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="flex items-center px-4 py-2">
-        {/* ロゴ */}
-        <div className="flex-shrink-0">
+        {/* ロゴ（白背景） */}
+        <div className="flex-shrink-0 bg-white">
           <Image
             src="/images/bsc-logo.jpg"
             alt="Boarding School Consulting Inc."
@@ -31,19 +31,19 @@ export default function Navigation() {
           <span className="w-6 h-0.5 bg-black" />
         </button>
 
-        {/* PC用ナビゲーション（ロゴの右に配置） */}
-        <nav className="hidden md:flex ml-auto">
+        {/* PC用ナビゲーション（背景 #c6a664） */}
+        <nav className="hidden md:flex ml-auto bg-[#c6a664]">
           <ul className="flex text-white text-sm md:text-[1.25rem] font-medium">
-            <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
+            <li className="px-4 py-6 border-l border-white whitespace-nowrap">
               <Link href="#about" className="block text-center hover:underline">会社情報</Link>
             </li>
-            <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
+            <li className="px-4 py-6 border-l border-white whitespace-nowrap">
               <Link href="#programs" className="block text-center hover:underline">留学プログラム</Link>
             </li>
-            <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
+            <li className="px-4 py-6 border-l border-white whitespace-nowrap">
               <Link href="#support" className="block text-center hover:underline">BSCのサポート</Link>
             </li>
-            <li className="bg-[#c6a664] px-4 py-6 border-l border-white whitespace-nowrap">
+            <li className="px-4 py-6 border-l border-white whitespace-nowrap">
               <Link href="#contact" className="block text-center hover:underline">お問い合わせ</Link>
             </li>
           </ul>
