@@ -7,11 +7,11 @@ export default function SupportSection() {
   return (
 <section id="support" className="py-16 px-4 text-[1.25rem] scroll-mt-24">
 <div className="text-center mb-12">
-        <h2 className="text-2xl font-bold border-b-4 border-red-500 inline-block">
+<h2 className="text-4xl font-bold border-b-4 border-red-500 inline-block">
           BSC's Support
         </h2>
-        <p className="text-sm mt-2">
-          ボーディングスクールコンサルティングでは、留学前から留学中、そして卒業後まで、
+        <p className="text-base text-gray-700 mt-2">
+        ボーディングスクールコンサルティングでは、留学前から留学中、そして卒業後まで、
           生徒の皆さんを全面的にサポートします。
         </p>
       </div>

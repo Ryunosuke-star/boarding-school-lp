@@ -13,7 +13,8 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold text-center mb-6 underline underline-offset-4 decoration-red-500">
             Contact
           </h2>
-          <p className="text-gray-700">お問い合わせ</p>
+          <p className="text-base text-gray-700">
+お問い合わせ</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000">

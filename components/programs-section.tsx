@@ -17,8 +17,8 @@ export default function ProgramsSection() {
         <h2 className="text-4xl font-bold text-center mb-6 relative inline-block after:block after:w-full after:h-1 after:bg-red-500 after:mt-1">
             Our Programs
         </h2>
-          <p className="text-gray-700 text-lg">
-            ボーディングスクールコンサルティングでは、生徒の皆さんに最適な留学プログラムをご提案しています。
+        <p className="text-base text-gray-700">
+        ボーディングスクールコンサルティングでは、生徒の皆さんに最適な留学プログラムをご提案しています。
           </p>
         </div>
 
