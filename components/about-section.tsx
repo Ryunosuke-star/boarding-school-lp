@@ -72,8 +72,8 @@ export function AboutSection() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 mt-6 text-center">
-              <a
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <a
                 href="https://boardingschool.jp/contact/"
                 target="_blank"
                 rel="noopener noreferrer"
