@@ -31,8 +31,8 @@ export function HeroSection() {
           <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
             For the
           </h1>
-          <h1 className="hero-text text-bsc-red text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-            Future
+          <h1 className="hero-text text-red-600 text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+           Future
           </h1>
         </div>
         <button
