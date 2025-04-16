@@ -37,13 +37,13 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
       >
         <div className="relative h-[6rem] md:h-[8rem] lg:h-[10rem] w-auto mb-4">
-          <Image
-            src="/images/Forthe.png"
-            alt="For the"
-            fill
-            className="object-contain"
-            priority
-          />
+        <Image
+  src="/images/forthe.png" // ← ここを小文字に修正
+  alt="For the"
+  fill
+  className="object-contain"
+  priority
+/>
         </div>
         <div className="relative h-[6rem] md:h-[8rem] lg:h-[10rem] w-auto">
           <Image
