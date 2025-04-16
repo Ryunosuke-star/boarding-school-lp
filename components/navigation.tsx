@@ -1,119 +1,65 @@
+"use client";
 
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
-"use client"
-
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-
-export function Navigation() {
-  return null
-}
-
-
-"use client"
-
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-
-export function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className={`w-full transition-all duration-300 ${isScrolled ? "bg-bsc-gold shadow-md" : ""}`}>
-      <nav className="hidden md:flex bg-bsc-gold w-full">
-        <a href="#about" className="nav-link">
-          Boarding School
-        </a>
-        <a href="#programs" className="nav-link">
-          Summer School Program
-        </a>
-        <a href="#support" className="nav-link">
-          BSC's Support
-        </a>
-        <a href="#events" className="nav-link">
-          Events
-        </a>
-        <a href="#about" className="nav-link">
-          About us
-        </a>
-        <a href="#contact" className="nav-link">
-          Contact
-        </a>
-      </nav>
+    <header className={`fixed top-0 left-0 w-full z-50 shadow-md`}>
+      <div className="flex w-full">
+        {/* 左半分：ロゴ + 白背景 */}
+        <div className="bg-white flex items-center px-6 py-3">
+          <Image
+            src="/images/bsc-logo.jpg"
+            alt="Boarding School Consulting Inc."
+            width={200}
+            height={60}
+            className="object-contain"
+          />
+        </div>
 
-      {/* モバイルメニュー */}
-      <div className="md:hidden bg-bsc-gold w-full">
-        <button
-          onClick={toggleMenu}
-          className="w-full flex items-center justify-end p-4 text-white"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* 右半分：ナビゲーション + ベージュ背景 */}
+        <div className="flex-1 bg-[#c6a664] text-white px-6 py-3 flex items-center justify-end">
+          {/* デスクトップ用ナビゲーション */}
+          <nav className="hidden md:flex space-x-6 text-[1.25rem] font-medium">
+            <Link href="#about" className="hover:underline">会社情報</Link>
+            <Link href="#programs" className="hover:underline">留学プログラム</Link>
+            <Link href="#support" className="hover:underline">BSCのサポート</Link>
+            <Link href="#contact" className="hover:underline">お問い合わせ</Link>
+          </nav>
 
-        {isMenuOpen && (
-          <div className="bg-bsc-gold w-full absolute z-50 left-0 right-0 shadow-lg animate-fade-in">
-            <a
-              href="#about"
-              className="block py-4 px-6 text-white hover:bg-amber-600 border-b border-amber-600"
-              onClick={toggleMenu}
-            >
-              Boarding School
-            </a>
-            <a
-              href="#programs"
-              className="block py-4 px-6 text-white hover:bg-amber-600 border-b border-amber-600"
-              onClick={toggleMenu}
-            >
-              Summer School Program
-            </a>
-            <a
-              href="#support"
-              className="block py-4 px-6 text-white hover:bg-amber-600 border-b border-amber-600"
-              onClick={toggleMenu}
-            >
-              BSC's Support
-            </a>
-            <a
-              href="#events"
-              className="block py-4 px-6 text-white hover:bg-amber-600 border-b border-amber-600"
-              onClick={toggleMenu}
-            >
-              Events
-            </a>
-            <a
-              href="#about"
-              className="block py-4 px-6 text-white hover:bg-amber-600 border-b border-amber-600"
-              onClick={toggleMenu}
-            >
-              About us
-            </a>
-            <a href="#contact" className="block py-4 px-6 text-white hover:bg-amber-600" onClick={toggleMenu}>
-              Contact
-            </a>
-          </div>
-        )}
+          {/* モバイル用メニューアイコン */}
+          <button
+            className="md:hidden text-white ml-4"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
-    </div>
-  )
+
+      {/* モバイル用メニュー */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-[#c6a664] px-6 pb-4 pt-2 space-y-2 text-white text-lg font-medium">
+          <Link href="#about" className="block hover:underline">会社情報</Link>
+          <Link href="#programs" className="block hover:underline">留学プログラム</Link>
+          <Link href="#support" className="block hover:underline">BSCのサポート</Link>
+          <Link href="#contact" className="block hover:underline">お問い合わせ</Link>
+        </div>
+      )}
+    </header>
+  );
 }
