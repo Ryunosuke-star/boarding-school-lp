@@ -5,16 +5,17 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* ナビゲーションバー（背景付き） */}
-      <div className="relative w-full bg-[#c79e6d] z-30 shadow-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div className="fixed top-0 left-0 w-full bg-[#c6a664] z-50 shadow-md">
+                <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           <div className="flex items-center space-x-2">
-            <Image
-              src="/BSC_LOGO_W.jpg"
-              alt="Boarding School Consulting Inc."
-              width={180}
-              height={60}
-              className="object-contain"
-            />
+          <Image
+  src="/images/bsc-logo.jpg"
+  alt="Boarding School Consulting Inc."
+  width={180}
+  height={60}
+  className="object-contain"
+/>
+
           </div>
           <nav className="text-white space-x-6 text-sm font-medium">
             <a href="#about" className="hover:underline">会社情報</a>
