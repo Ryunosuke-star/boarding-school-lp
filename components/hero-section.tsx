@@ -28,11 +28,11 @@ export function HeroSection() {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }`}
         >
-          <h1 className="hero-text text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+          <h1 className="text-white text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
             For the
           </h1>
-          <h1 className="hero-text text-red-600 text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
-           Future
+          <h1 className="text-red-600 text-6xl sm:text-8xl md:text-9xl lg:text-[10rem]">
+            Future
           </h1>
         </div>
         <button
