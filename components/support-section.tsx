@@ -32,9 +32,9 @@ export default function SupportSection() {
           </Link>
           <div className="p-6 flex flex-col flex-grow justify-between">
             <div>
-              <h3 className="text-base font-semibold mb-2 text-bsc-blue">
-              BSCは、留学相談から卒業までを包括的に支援し、豊富な知見に基づく学校選定と進学コンサルティングを提供します。
-              国内外のネットワークを活かし、長期的な学びと成長を支えます。</h3>
+            <p className="text-gray-700 text-lg mb-4">
+            BSCは、留学相談から卒業までを包括的に支援し、豊富な知見に基づく学校選定と進学コンサルティングを提供します。
+              国内外のネットワークを活かし、長期的な学びと成長を支えます。</p>
               <ul className="list-disc list-inside space-y-1 text-sm">
               <li>4月：留学相談</li>
               <li>6～11月：学校選定コンサルティング</li>
@@ -75,9 +75,9 @@ export default function SupportSection() {
           </Link>
           <div className="p-6 flex flex-col flex-grow justify-between">
             <div>
-              <h3 className="text-base font-semibold mb-2 text-bsc-blue">
-              BSCは、お子様の興味や年齢に応じたプログラムを提案し、各家庭に寄り添った個別支援を提供します。
-              また、短期だけでなく将来を見据えた成長につながる学びを重視し、安心して挑戦できる環境を整えます。</h3>
+            <p className="text-gray-700 text-lg mb-4">
+            BSCは、お子様の興味や年齢に応じたプログラムを提案し、各家庭に寄り添った個別支援を提供します。
+              また、短期だけでなく将来を見据えた成長につながる学びを重視し、安心して挑戦できる環境を整えます。</p>
               <ul className="list-disc list-inside space-y-1 text-sm">
               <li>10～5月：サマースクールプログラムの紹介、申込手続き／出願作業</li>
               <li>参加時期確定次第：入学書類の作成、海外留学生保険の手続き、航空券・現地空港送迎の手配 等</li>
