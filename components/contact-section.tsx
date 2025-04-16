@@ -28,7 +28,8 @@ export default function ContactSection() {
             <div className="bg-black text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
               <Mail size={28} />
             </div>
-            <p className="text-sm text-gray-700 font-semibold mb-2">フォームでのお問い合わせ</p>
+            <p className="text-gray-700 text-lg mb-4">
+            フォームでのお問い合わせ</p>
             <button className="inline-flex items-center bg-white border border-black rounded-full px-4 py-2 font-semibold hover:bg-black hover:text-white transition-colors">
               お問い合わせフォーム
             </button>
@@ -42,8 +43,9 @@ export default function ContactSection() {
             <div className="bg-black text-white rounded-full w-14 h-14 flex items-center justify-center mb-6">
               <Phone size={28} />
             </div>
-            <p className="text-sm text-gray-700 font-semibold mb-2">電話でのお問い合わせ</p>
-            <p className="text-sm text-gray-700">
+            <p className="text-gray-700 text-lg mb-4">
+            電話でのお問い合わせ</p>
+            <p className="text-gray-700 text-lg mb-4">
               03-6555-1642 <span className="text-xs">[平日 10:00-17:00]</span>
             </p>
           </a>
