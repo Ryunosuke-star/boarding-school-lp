@@ -11,8 +11,7 @@ export default function SupportSection() {
           BSC's Support
         </h2>
         <p className="text-base text-gray-700 mt-2">
-        ボーディングスクールコンサルティングでは、留学前から留学中、そして卒業後まで、
-          生徒の皆さんを全面的にサポートします。
+        BSCは、留学前から留学中、そして卒業後まで、生徒の皆さんを全面的にサポートします。
         </p>
       </div>
 

@@ -18,7 +18,7 @@ export default function ProgramsSection() {
         Our Programs
       </h2>
       <p className="text-base text-gray-700 mt-2">
-      ボーディングスクールコンサルティングでは、お子様の希望に合わせた最適な留学プログラムをご提案しています。
+      BSCは、お子様の希望に合わせた最適な留学プログラムをご提案しています。
       </p>
     </div>
 
