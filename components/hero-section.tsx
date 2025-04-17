@@ -35,13 +35,7 @@ export function HeroSection() {
             Future
           </h1>
         </div>
-        <button
-          onClick={scrollToAbout}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce"
-          aria-label="scroll down"
-        >
-          <ChevronDown size={36} />
-        </button>
+        
       </div>
     </section>
   )
